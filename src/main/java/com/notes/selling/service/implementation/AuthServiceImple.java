@@ -5,7 +5,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.notes.selling.dto.UserDetailsDto;
-import com.notes.selling.entity.UserDetails;
+import com.notes.selling.entity.Users;
 import com.notes.selling.helper.Provider;
 import com.notes.selling.repo.AuthRepository;
 import com.notes.selling.service.blueprint.AuthService;
@@ -40,7 +40,7 @@ public class AuthServiceImple implements AuthService {
     @Override
     public void register(UserDetailsDto userDetailsDto) {
 
-        UserDetails userDetails = modelMapper.map(userDetailsDto, UserDetails.class);
+        Users userDetails = modelMapper.map(userDetailsDto, Users.class);
 
         userDetails.setPassword(
                 passwordEncoder.encode(userDetailsDto.getPassword())

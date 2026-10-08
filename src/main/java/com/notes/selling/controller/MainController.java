@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.notes.selling.dto.UserDetailsDto;
-import com.notes.selling.entity.UserDetails;
 import com.notes.selling.service.blueprint.AuthService;
 
 import lombok.RequiredArgsConstructor;

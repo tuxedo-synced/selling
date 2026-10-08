@@ -4,8 +4,8 @@ import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.notes.selling.entity.UserDetails;
+import com.notes.selling.entity.Users;
 
-public interface AuthRepository extends JpaRepository<UserDetails , UUID>{
+public interface AuthRepository extends JpaRepository<Users , UUID>{
     
 }

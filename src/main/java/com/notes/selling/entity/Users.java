@@ -1,6 +1,12 @@
 package com.notes.selling.entity;
 
+import java.util.Collection;
+import java.util.List;
 import java.util.UUID;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import com.notes.selling.helper.Provider;
 
@@ -19,7 +25,7 @@ import lombok.Setter;
 @Table(name = "user_details")
 @Getter
 @Setter
-public class UserDetails {
+public class Users implements UserDetails{
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -40,4 +46,9 @@ public class UserDetails {
 
     @Column(nullable = false)
     private boolean isOnline = false;
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+    }
 }
