@@ -1,0 +1,109 @@
+body{
+    max-width: 100%;
+    margin: 0;
+}
+
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgb(238, 234, 225);
+}
+
+.register-bar{
+    margin-left: 3rem;
+}
+
+.divider-section{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.login-bar,.register-bar{
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.caption-section{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    font-size: 4em;
+}
+
+.sub-caption-section{
+    text-align: center;
+    font-family: "Syne", sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+.heading-section{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+}
+
+.table-section {
+    width: 90%;
+    margin: 3rem auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-head-section {
+    background-color: rgb(238, 234, 225);
+    color: black;
+}
+
+.table-head-section th {
+    padding: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.table-data-section td {
+    padding: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-form{
+    height: 50vh;
+}
+
+.contact-heading{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+}
+
+.contact-moto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 0 6vw;
+}
+
+.contact-ways{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
