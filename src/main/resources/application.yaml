@@ -1,7 +1,7 @@
 spring:
   application:
     name: selling
-    
+
   mvc:
     view:
       prefix: /WEB-INF/views/
@@ -9,11 +9,23 @@ spring:
 
   datasource:
     url: jdbc:oracle:thin:@localhost:1521/XEPDB1
-    username: oracle
-    password: oracle
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: oracle.jdbc.OracleDriver
 
   jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
     hibernate:
       ddl-auto: update
     show-sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+          github:
+            client-id: ${GITHUB_CLIENT_ID}
+            client-secret: ${GITHUB_CLIENT_SECRET}
